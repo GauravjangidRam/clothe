@@ -1,0 +1,99 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+.Heading{
+   
+    position: relative;
+    left: 20rem;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.Heading h1{
+    text-align: center;
+    font-weight: 400;
+    color: rgb(57, 89, 109);
+}
+.Heading hr{
+
+margin: 0 auto;
+   border-radius:2px;
+   width: 30%;
+   border: 2px solid black;
+
+}
+
+/* -----------------------Card Style------------------------------- */
+
+.women-Product{
+ /* display: flex; */
+ gap:2rem;
+}
+
+.product .card{
+border: none;
+border-radius: 10px;
+}
+.product .card .img1{
+
+border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    border-radius: 7px;
+    
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.details h5{
+    color: rgb(237, 151, 20);
+}
+.details p>span{
+    font-size: .9rem;
+    gap: 1rem;
+    font-weight: 300;
+    color: rgb(104, 101, 101);
+}
+
+.details .rat{
+    background: rgb(57, 158, 57);
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: rgb(255, 251, 246);
+}
+
+.details .price>span{
+font-weight: 900;
+font-size: 20px;
+color: black;
+}
+
+.details .price del{
+    color: rgb(104, 101, 101);
+    margin-left: 2px;
+    font-size: 15px;
+    font-weight:700 ;
+}
+.details .price .off{
+    color: rgb(237, 151, 20);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.details >h6{
+    color: rgb(40, 155, 40);
+}

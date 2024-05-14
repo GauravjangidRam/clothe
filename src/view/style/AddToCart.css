@@ -1,0 +1,148 @@
+.heading{
+    width: 30rem;
+    /* background-color: red;     */
+    margin: 0 auto;
+}
+.heading .heading-add{
+    
+    font-weight: 700;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading .heading-line{
+    border: 2px solid rgb(14, 10, 10);
+   width: 15rem;
+   margin: 0 auto;    
+   margin-bottom: 30px;
+}
+
+.image-section{
+    display: flex;
+    gap: 5rem;
+}
+.image-section .left-img .left-img-style{
+    border-radius: 10px;
+}
+.image-section .main-img .img-style{
+    height: 32rem;
+    border-radius: 20px;
+    display: flex;
+}
+
+.right-details{
+
+    max-width:60rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.right-details .right-box h3{
+    text-align: center;
+    color: rgb(218, 195, 167);
+}
+.right-details .right-box .name1{
+    text-align: center;
+    color: gray;
+}
+
+.right-details .right-box .rating{
+    text-align: center;
+    margin-top: 20px;
+}
+.right-details .right-box p>button{
+    background-color: rgb(5, 206, 1);
+    border: none;
+    border-radius: 5px;
+    width: 9rem;
+    color: white;
+    padding: 4px;
+    margin-right: 1rem
+}
+.right-details .right-box p>button>span{
+  margin-left: 1rem;
+}
+
+.right-details .right-box h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.right-details .right-box .mrp{
+    text-align: center;
+    color: rgb(183, 162, 136);
+}   
+
+.right-details .right-box p{
+    text-align: center;
+    margin: 0;
+}
+.right-details .right-box .size-section{
+   
+   margin-top: 5px;
+}
+.right-details .right-box .size-btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.right-details .right-box .size-btn1{
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.right-details .right-box .text-color{
+    text-align: center;
+    margin-top: 10px;
+}
+.right-details .right-box .color-btn{
+    text-align: center;
+    margin-top: 10px;
+   
+}
+.right-details .right-box .color-btn>button{
+    border: none;
+    border-radius: 50px;
+    width: 20px;
+   
+}
+.right-details .right-box .color-btn>button:hover{
+  border: 1px solid black;
+   
+}
+
+
+.right-details .right-box .buy-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.right-details .right-box .buy-add  button:nth-child(1){
+   border: none;
+   padding: 10px;
+   width: 9rem;
+   background: rgb(25, 23, 23);
+   color: rgb(208, 208, 199);
+   border-radius: 10px; margin-right: 10px;
+}
+
+
+.right-details .right-box .buy-add  button:nth-child(2){
+   border: none;
+   padding: 10px;
+   width: 9rem;
+   margin-right: 10px;
+    background: rgb(25, 23, 23);
+   color: rgb(208, 208, 199);
+   border-radius: 10px;
+}
+

@@ -1,0 +1,233 @@
+ /* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Navbar{
+  border: 1px solid red;
+ background: rgb(0, 0, 0);
+}
+
+.nav{
+ width: 30%;
+ background-color: #61dafb;
+ display: flex;
+margin: 0 auto;
+position: absolute;
+top: 50%;
+
+
+}
+.nav-style{
+  color: red;
+  
+}
+
+.me-auto{
+  
+}
+.brand{
+  margin-left: 2vw;
+  position: relative;
+  z-index: 1;
+  font-family: 'Courier New', Courier, monospace;
+  color: azure;
+}
+
+.me-auto .login-style{
+  color: rgb(186, 183, 183);
+  position: absolute;
+  left: 68rem;
+  top: .4rem;
+  font-size: 1rem;
+}
+.me-auto .login-style:hover{
+color: white;
+}
+
+
+
+.me-auto .register-style
+{
+  position: absolute;
+  left: 72rem; 
+  top: .4rem;
+  color:  rgb(186, 183, 183) ;
+
+}
+.me-auto .register-style:hover
+{
+ color: white;
+
+}
+
+.me-auto .logout-style{
+  position: absolute;
+  left: 71rem;
+  top: .4rem;
+  color: rgb(212, 224, 220);
+  
+}
+.me-auto .logout-style:hover{
+  color: rgb(255, 255, 255);
+
+}
+
+.me-auto .d-flex{
+  position: absolute;
+  left:49rem;
+}
+
+/* .me-auto .login-style{
+  color: whitesmoke;
+  position: absolute;
+  left: 65rem;
+  font-weight: 400;
+  font-size: 20px;
+  top: 2px;
+
+} */
+/* .me-auto .logout-style {
+
+ position: absolute;
+ top: 2px;
+ font-weight: 400;
+ font-size: 18px;
+ left: 72rem;
+
+
+} */
+
+/* 
+.Navbar .me-auto .nav-style{
+
+
+ /* background: white; */
+
+
+
+/* .px  x 
+}
+.summer{
+  width: 100%;
+}
+
+
+.slider-main{
+  background-color: red;
+}
+
+----------------------------------- */
+
+
+.Navbar{
+  /* position:relative ; */
+  width: 100%;
+  
+}
+
+.brand
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.list-style{
+  width: 70%;
+}
+.section{
+  position: relative;
+
+}
+
+ul {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left:60px;
+  top:-10px;
+}
+  
+ul li a{
+  text-decoration: none;
+
+  margin-top: 40px;
+  color: antiquewhite;
+  transition:  2s ease-in-out ;
+
+}
+ul li a:hover{
+border-bottom: 2px solid rebeccapurple;
+transform:translate(to left );
+
+}
+.d-flex{
+  position: absolute;
+  left: 48rem;
+  top: 8.9px;
+}
+
+
+.list-style .login-style{
+  color: rgb(186, 183, 183);
+  position: absolute;
+  left: 68rem;
+  top: .4rem;
+  font-size: 1rem;
+}
+.list-style .register-style
+{
+  position: absolute;
+  left: 72rem; 
+  top: .4rem;
+  color:  rgb(186, 183, 183) ;
+
+}
+.list-style .logout-style{
+  position: absolute;
+  left: 71rem;
+  top: .4rem;
+  color: rgb(212, 224, 220);
+  
+}

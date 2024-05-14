@@ -1,0 +1,148 @@
+.container-Row{
+  background-color: rgb(130, 159, 213);
+ width: 30rem;
+ height: 28rem;
+ border-radius: 2rem;
+ margin: 0 auto;
+ 
+}
+.container-Row:hover{
+  /* -webkit-box-shadow:2px 2px 10px red ;
+  background:linear-gradient(#e66465, #9198e5, rgb(179, 245, 179));  */
+}
+
+#loginForm{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 30rem;
+}
+
+#loginForm h2{
+  border-bottom: .1rem solid black;
+  border-radius: 1rem ;
+  width: 15rem;
+  text-align: center;
+  justify-content: center;
+  margin-left: 6rem;
+
+}
+
+/* #loginForm h2:hover{
+  border-bottom: .1rem solid black;
+  border-radius: 10rem ;
+ background:linear-gradient(#e66465,#9198e5); 
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+#loginForm input{
+border-radius: 2rem ;
+outline: none;
+border:none;
+width:20rem;
+margin: 0 auto;
+transition: all ease .3s;
+}
+#loginForm input:hover{
+  font-size: 20px;
+  width: 100%;
+
+}
+
+::placeholder{
+  position:absolute;
+  left: 1rem;
+
+}
+
+
+::placeholder:hover
+{
+  font-weight: 500;
+  color:blue ;
+
+}
+#loginForm button{
+  width: 20rem;
+  border: none;
+  color: white;
+  background-color: rgb(79, 119, 138);
+ margin: 0 auto;
+ border-radius: 2rem;
+  transition:.7s;
+}
+
+
+#loginForm button:hover{
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+    background:  rgb(77, 127, 77);
+    color: #c6c6c6;
+    
+}
+
+
+#loginForm .a-style{
+  /* background-color: aqua;  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:2rem;
+  align-items: center;
+}
+
+#loginForm .a-style a{
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 15px;
+  color: darkblue;
+}
+
+#loginForm .a-style a:nth-child(1){
+
+  font-weight: 500;
+}
+/* #loginForm .a-style a:nth-child(1):hover{
+  font-size: 20px;
+  border-bottom:2px solid rgb(22, 27, 22);
+  border-bottom-color:gray ;
+  background: lavender;
+  border-radius: 10px;
+
+
+} */
+
+#loginForm .a-style a:nth-child(2){
+  font-size: 25px;
+
+}
+#loginForm .a-style a:nth-child(2):hover{
+  /* font-size: 30px;
+  border: 2px solid;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius:20px ; */
+  /* background:lightskyblue ; */
+
+
+}
+/* --------------------------------------------------------------- */ 
+
+
+/* ------------------------------------------------------------------ */
+/* Product Page ke CSS hai  */
+
+
+
+.cloth-top{
+    text-align: center;
+    border-bottom: 2px solid rgb(15, 12, 12);
+    font-weight: 900;
+    position: relative;
+    width: 30%;
+    left: 26.5rem;
+    border-radius: 30px;
+    box-shadow: 0 2px 11px rgb(71, 68, 68);
+} 
