@@ -1,4 +1,4 @@
-import { Container, Row, Image, Card } from "react-bootstrap";
+import { Row,Image, Card } from "react-bootstrap";
 import {Carousel as WomenPage} from 'react-bootstrap';
 import React from 'react';
 import '../style/women.css'
@@ -33,103 +33,165 @@ export default function Women() {
         navPage('/WomenProductPage')
       }  
     return (
+
         <>
         <div className="Heading">
-
             <h1>Women Clothes</h1>
             <hr />
         </div>
-        <Row >
+        <Row>
+            <WomenPage className="main-slider-img" style={{width:"100%"}}>
+                {womenslider.map((value, index) => (
+                    <WomenPage.Item key={index}> {/* Add key here */}
+                        <Image src={value.img} style={{width:"100%"}} />
+                    </WomenPage.Item>
+                ))}
+            </WomenPage>
+        </Row>
+        <Row>
+            <Image src={require('../image/Home-page-img/Women/Women Main Card Section/D-1.0-WHP-060424-TOPBRANDS-header.jpg')} style={{width:"100%"}} />
+            <Carousel responsive={responsive}>
+                {womencards.map((value, index) => (
+                    <Card key={index} lg={4} style={{width:"25rem" ,marginBottom:0 ,cursor:"pointer"}} onClick={goto}>
+                        <Image src={value.img}/>
+                    </Card>
+                ))}
+            </Carousel>
+            <Carousel responsive={responsive}>
+                {womencards2.map((value, index) => (
+                    <Card key={index} lg={4} style={{width:"26rem",marginTop:'1px'}} onClick={goto}>
+                        <Image src={value.img}/>
+                    </Card>
+                ))}
+            </Carousel>
+        </Row>
+        <Row>
+            <Image src={require('../image/Home-page-img/Women/Women Second Slider/D-1.0-WHP-060424-TOPBANNER-HEADER.jpg')} />
+            <Image src={require('../image/Home-page-img/Women/Women Second Slider/d-1.0-WHP-180424-SPONSOREDCAROUSEL-HEADER.jpg')} />
+            <WomenPage>
+                {womenslider2.map((value, index) => (
+                    <WomenPage.Item key={index}>
+                        <Image src={value.img} style={{width:"100%"}} />
+                    </WomenPage.Item>
+                ))}
+            </WomenPage>
+        </Row>
+        <Row>
+            <Image src={require('../image/Home-page-img/Women/Women Card/D-1.0-WHP-060424-SPONSORBRANDTILES-header.jpg')} />
+            {womencards3.map((value, index) => (
+                <Card key={index} style={{width:'26rem',marginLeft:'10px',cursor:"pointer"}} lg={3} onClick={goto}>
+                    <Image src={value.img}/>
+                </Card>
+            ))}
+        </Row>
+        <Row>
+            <Image src={require('../image/Home-page-img/Women/Women Jwaller/D-1.0-WHP-280424-AKSHAYATRITYA-header.jpg')} />
+            <WomenPage>
+                {womenslider3.map((value, index) => (
+                    <WomenPage.Item key={index}>
+                        <Image src={value.img} style={{width:"100%"}} />
+                    </WomenPage.Item>
+                ))}
+            </WomenPage>
+        </Row>
+    </>
+    //     <>
+    //     <div className="Heading">
+
+    //         <h1>Women Clothes</h1>
+    //         <hr />
+    //     </div>
+    //     <Row  >
 
        
 
-            <WomenPage className="main-slider-img"  style={{width:"100%"}} >
-                {
-                    womenslider.map(value=>(
+    //         <WomenPage className="main-slider-img" style={{width:"100%"}} >
+    //             {
+    //                 womenslider.map((value ,index)=>(
                         
-                        <WomenPage.Item>
-                        <Image src={value.img} style={{width:"100%"}}  ></Image>
+    //                     <WomenPage.Item key={index}>
+    //                     <Image src={value.img} style={{width:"100%"}}  ></Image>
    
-                   </WomenPage.Item>
-                    ))
-                }
+    //                </WomenPage.Item>
+    //                 ))
+    //             }
                
-            </WomenPage>
+    //         </WomenPage>
              
-        </Row>
-        <Row>
+    //     </Row>
+    //     <Row>
 
-        <Image src={require('../image/Home-page-img/Women/Women Main Card Section/D-1.0-WHP-060424-TOPBRANDS-header.jpg')} style={{width:"100%"}}></Image>
-        <Carousel responsive={responsive} >
-                {
-                    womencards.map(value=>(
-                        <Card lg={4} style={{width:"25rem" ,marginBottom:0}} onClick={goto}>
-                            <Image src={value.img}/>
-                        </Card>
-                    ))
-                }
-       </Carousel>;
+    //     <Image src={require('../image/Home-page-img/Women/Women Main Card Section/D-1.0-WHP-060424-TOPBRANDS-header.jpg')} style={{width:"100%"}}></Image>
+    //     <Carousel responsive={responsive} >
+    //             {
+    //                 womencards.map(value=>(
+    //                     <Card lg={4} style={{width:"25rem" ,marginBottom:0}} onClick={goto} >
+    //                         <Image src={value.img}/>
+    //                     </Card>
+    //                 ))
+    //             }
+    //    </Carousel>;
       
                
      
 
-        <Carousel responsive={responsive}>
-                {
-                    womencards2.map(value=>(
-                        <Card lg={4} style={{width:"26rem",marginTop:'1px'}} onClick={goto}>
-                            <Image src={value.img}/>
-                        </Card>
-                    ))
-                }
-       </Carousel>;
-        </Row>
+    //     <Carousel responsive={responsive}>
+    //             {
+    //                 womencards2.map(value=>(
+    //                     <Card lg={4} style={{width:"26rem",marginTop:'1px'}} onClick={goto}>
+    //                         <Image src={value.img}/>
+    //                     </Card>
+    //                 ))
+    //             }
+    //    </Carousel>;
+    //     </Row>
        
-       <Row>
-        <Image src={require('../image/Home-page-img/Women/Women Second Slider/D-1.0-WHP-060424-TOPBANNER-HEADER.jpg')}></Image>
-        <Image src={require('../image/Home-page-img/Women/Women Second Slider/d-1.0-WHP-180424-SPONSOREDCAROUSEL-HEADER.jpg')}></Image>
+    //    <Row>
+    //     <Image src={require('../image/Home-page-img/Women/Women Second Slider/D-1.0-WHP-060424-TOPBANNER-HEADER.jpg')}></Image>
+    //     <Image src={require('../image/Home-page-img/Women/Women Second Slider/d-1.0-WHP-180424-SPONSOREDCAROUSEL-HEADER.jpg')}></Image>
 
 
-                <WomenPage >
-                    {
-                        womenslider2.map(value=>(
-                            <WomenPage.Item>
-                            <Image src={value.img} style={{width:"100%"}}  ></Image>
+    //             <WomenPage >
+    //                 {
+    //                     womenslider2.map(value=>(
+    //                         <WomenPage.Item>
+    //                         <Image src={value.img} style={{width:"100%"}}  ></Image>
        
-                       </WomenPage.Item>
-                        ))
-                    }
-                </WomenPage>
-       </Row>
+    //                    </WomenPage.Item>
+    //                     ))
+    //                 }
+    //             </WomenPage>
+    //    </Row>
 
 
-       <Row>
-        <Image src={require('../image/Home-page-img/Women/Women Card/D-1.0-WHP-060424-SPONSORBRANDTILES-header.jpg')}></Image>
+    //    <Row>
+    //     <Image src={require('../image/Home-page-img/Women/Women Card/D-1.0-WHP-060424-SPONSORBRANDTILES-header.jpg')}></Image>
 
-                    {
-                        womencards3.map(value=>(
-                            <Card style={{width:'26rem',marginLeft:'10px'}} lg={3}onClick={goto} >
-                                <Image src={value.img}></Image>
-                            </Card>
-                        ))
-                    }
-       </Row>
+    //                 {
+    //                     womencards3.map(value=>(
+    //                         <Card style={{width:'26rem',marginLeft:'10px'}} lg={3}onClick={goto} >
+    //                             <Image src={value.img}></Image>
+    //                         </Card>
+    //                     ))
+    //                 }
+    //    </Row>
 
-                    <Row>
-                        <Image src={require('../image/Home-page-img/Women/Women Jwaller/D-1.0-WHP-280424-AKSHAYATRITYA-header.jpg')}></Image>
+    //                 <Row>
+    //                     <Image src={require('../image/Home-page-img/Women/Women Jwaller/D-1.0-WHP-280424-AKSHAYATRITYA-header.jpg')}></Image>
                         
-                <WomenPage >
-                    {
-                        womenslider3.map(value=>(
-                            <WomenPage.Item>
-                            <Image src={value.img} style={{width:"100%"}}  ></Image>
+    //             <WomenPage >
+    //                 {
+    //                     womenslider3.map(value=>(
+    //                         <WomenPage.Item>
+    //                         <Image src={value.img} style={{width:"100%"}}  ></Image>
        
-                       </WomenPage.Item>
-                        ))
-                    }
-                </WomenPage>
-                    </Row>
+    //                    </WomenPage.Item>
+    //                     ))
+    //                 }
+    //             </WomenPage>
+    //                 </Row>
 
                
-        </>
+    //     </>
     )
 }
