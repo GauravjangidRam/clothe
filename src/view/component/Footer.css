@@ -214,6 +214,7 @@ hr {
 
 .Container .lo {
     display: flex;
+    justify-content: space-evenly;
     /* flex-direction: row; */
 }
 
