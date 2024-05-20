@@ -24,7 +24,16 @@ const Register = () => {
     e.preventDefault();
     // Here you can perform form validation and submission logic
     console.log(formData);
-    window.location='/'
+    // formData.map((e)=>{
+    //   console.log(e)
+    // })
+    localStorage.setItem("username", formData.username)
+    localStorage.setItem("email", formData.email)
+    localStorage.setItem("pswd", formData.password)
+    localStorage.setItem("PhoneNo.", formData.phoneNumber)
+    localStorage.setItem("address.", formData.address)
+    localStorage.setItem("pincode", formData.pincode)
+    window.location='/login'
     alert('You Are Successfull Register')
     // Reset form fields
     setFormData({

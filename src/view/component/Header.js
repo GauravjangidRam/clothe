@@ -12,7 +12,7 @@ export default function Header(){
   const [user, setUser]= useState('')
 
   useEffect(()=>{
-    setUser(localStorage.getItem('user'))
+    setUser(localStorage.getItem('username'))
   },[]);
     return(
         <>

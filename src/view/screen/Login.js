@@ -20,6 +20,7 @@ function Login() {
     const [name , setName]=useState('')
     const [email , setEmail]=useState('')
     const [password , setPassword]=useState('')
+    const [logStatus, setLogStatus] = useState(false);
   
     const infoName= (event)=>{
         setName(event.target.value)
@@ -33,6 +34,25 @@ function Login() {
   
   
     const onPress =()=>{
+      let localLog = false
+      if(localStorage.getItem("username") ===name){
+        if(localStorage.getItem("email")===email){
+          if(localStorage.getItem("pswd")===password){
+            alert("Successfully logged in")
+            localLog = true
+            setLogStatus(true)
+            
+          }else{
+            console.log("Password is incorrect")
+          }
+        }else{
+          alert("Email is incorrect")
+        }
+        // alert(`${name} is correct!`)
+      }else{
+        alert(`Username is incorrect.`)
+        // nav("/login")
+      }
       console.log('login')
       console.log(name)
       console.log(email)
@@ -43,12 +63,16 @@ function Login() {
         name,email,password
       }
   
-      localStorage.setItem('user',param)
+      // localStorage.setItem('user',param )
       console.log(param)
       setName('')
       setEmail('')
       setPassword('')
-      window.location='/'
+      console.log(logStatus)
+      if(localLog === true){
+        nav("/")
+      }
+      // window.location='/'
     }
     return (
       <>
