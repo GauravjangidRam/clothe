@@ -237,6 +237,7 @@ transform:translate(to left );
 
 
 .Navbar {
+  /* max-height: 20vh; */
   display: flex;
   padding: 1rem;
   justify-content: space-between;  
@@ -283,6 +284,7 @@ transform:translate(to left );
 }
 .logStatus{
   justify-content: center;
+  letter-spacing: 0.2rem;
   /* margin-left:10rem; */
   /* margin-right: -2rem; */
 
@@ -309,7 +311,9 @@ li:not(:hover) a{
   nav{
     padding:0px;
   }
+  
   .Navbar {
+    padding: 0.2rem;
     flex-direction: column;
   }
 
@@ -338,12 +342,25 @@ li:not(:hover) a{
   .list-style .section ul{
     padding:0;
     display: flex;
+
     justify-content: space-around;
     align-items: center;
   }
   .logStatus{
     align-self: center;
     display: flex;
+  }
+  .logStatus *:not(span){
+    padding: 0.02rem;
+    border:2px solid gray;
+    border-radius: 10px;
+    margin:0.4rem
+  }
+  .logout-style{
+    border:1px solid white;
+    border-radius: 25px;
+    padding: 0.08rem;
+    align-self: center;
   }
 
   /* .react-multi-carousel-track{
