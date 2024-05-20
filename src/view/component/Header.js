@@ -1,15 +1,10 @@
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import '../../App.css';
 import { useEffect, useState } from 'react';
-import { Form, Button, Container, Collapse } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import "../../App.css";
-import { useEffect, useState } from "react";
-import { Form, Button } from "react-bootstrap";
+
 
 
 export default function Header() {
@@ -22,7 +17,7 @@ export default function Header() {
     <>
       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-      <nav>
+   
         <Navbar className="Navbar" bg="dark" data-bs-theme="dark">
           <Navbar.Brand className="brand" href="/">
             CloTheS
@@ -76,7 +71,10 @@ export default function Header() {
         </Navbar>
 
         <br />
-      </nav>
+  
     </>
   );
 }
+
+
+
