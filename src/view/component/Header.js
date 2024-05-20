@@ -1,16 +1,6 @@
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React, { useEffect, useState } from 'react';
+import { Nav, Navbar, NavDropdown, Form, Button } from 'react-bootstrap';
 import '../../App.css';
-import { useEffect, useState } from 'react';
-import { Form, Button, Container, Collapse } from 'react-bootstrap';
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import "../../App.css";
-import { useEffect, useState } from "react";
-import { Form, Button } from "react-bootstrap";
-
 
 export default function Header() {
   const [user, setUser] = useState("");
@@ -18,6 +8,7 @@ export default function Header() {
   useEffect(() => {
     setUser(localStorage.getItem("username"));
   }, []);
+
   return (
     <>
       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -41,11 +32,6 @@ export default function Header() {
                 </li>
               </ul>
             </div>
-
-            {/* <Nav.Link href="/Men" className='nav-style'>MEN </Nav.Link>
-
-            <Nav.Link href="/Women"  className='nav-style'>WOMEN</Nav.Link>
-            <Nav.Link href="/Kids"  className='nav-style'>KIDS</Nav.Link> */}
 
             <Form className="d-flex">
               <Form.Control
