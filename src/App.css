@@ -278,3 +278,27 @@ transform:translate(to left );
     width: 100%;
   }
 }
+
+
+
+.brown-text {
+  color: #8B4513;
+}
+
+.rat {
+  background-color: #33ff00;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.off {
+  margin-right: 5px;
+  color: gray;
+}
