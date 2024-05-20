@@ -135,14 +135,77 @@ transition: all ease .3s;
 /* Product Page ke CSS hai  */
 
 
+/* formstyle.css */
 
-.cloth-top{
-    text-align: center;
-    border-bottom: 2px solid rgb(15, 12, 12);
-    font-weight: 900;
-    position: relative;
-    width: 30%;
-    left: 26.5rem;
-    border-radius: 30px;
-    box-shadow: 0 2px 11px rgb(71, 68, 68);
-} 
+.cloth-top {
+  text-align: center;
+  border-bottom: 2px solid rgb(15, 12, 12);
+  font-weight: 900;
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0 2px 11px rgb(71, 68, 68);
+}
+
+.card {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.details {
+  padding: 10px;
+  text-align: center;
+}
+
+.brown-text {
+  color: #8B4513;
+}
+
+.rat {
+  background-color: #FFD700;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.off {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .cloth-top {
+    width: 50%;
+    left: 0;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cloth-top {
+    width: 70%;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}

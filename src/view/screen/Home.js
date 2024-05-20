@@ -1,17 +1,15 @@
+
 import { useEffect, useState } from 'react';
-import { Col, Row, Image } from 'react-bootstrap';
+import { Col, Row, Image, Container } from 'react-bootstrap';
 import { Carousel as Banner } from 'react-bootstrap';
-import { BannerImg, EveryDay, card2 ,card3, mainslider, offer, secondslider} from '../data/data'
-// import Button from 'react-bootstrap/Button';
+import { BannerImg, EveryDay, card2, card3, mainslider, offer, secondslider } from '../data/data';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-
 function Home() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -29,139 +27,99 @@ function Home() {
     }
   };
 
-  const [everyone, setEvery] = useState('')
+  const [everyone, setEvery] = useState([]);
 
   useEffect(() => {
     setEvery(EveryDay);
-    console.log(EveryDay)
-  })
-
+    console.log(EveryDay);
+  }, []);
 
   return (
-    <>
-      <Row>
+    <Container fluid>
+      <Row className="mb-3">
         <Col>
           <Banner>
-            {
-              mainslider.map(main =>(
-                <Banner.Item>
-              <Image src={main.img} style={{ width: '100%' }}></Image>
-              
-            </Banner.Item>
-              ))
-            }
-            
+            {mainslider.map((main, index) => (
+              <Banner.Item key={index}>
+                <Image src={main.img} style={{ width: '100%' }} />
+              </Banner.Item>
+            ))}
           </Banner>
         </Col>
       </Row>
 
+      <Row className="mb-3">
+        <Image src={require('../image/Home-page-img/Summer Specials_D.jpg')} fluid />
+      </Row>
 
-      <Row className='card1'>
-        <Image src={require('../image/Home-page-img/Summer Specials_D.jpg')}></Image>
-        {/* <Carousel responsive={responsive} >
-
-        
-        </Carousel> */}
+      <Row className="mb-3">
         <Carousel responsive={responsive}>
-        {
-            EveryDay.map((d) => (
-              <Card style={{ width: '18rem', marginLeft: 20, border: 'none' }} >
-                <Card.Img variant="top" src={d.img} />
-
-              </Card>
-            ))
-          }
-          </Carousel>
-      </Row>
-
-      <Row>
-        <Image src={require('../image/Home-page-img/slider2/M-1.0-UHP-18042024-DailyBanner-header.jpg')}></Image>
-
-
-
-
-         <Image src={require('../image/Home-page-img/slider2/D-1.0-UHP-18042024-DB-header.jpg')}></Image>
-
-         <Banner>
-          {
-            secondslider.map(second=>(
-              <Banner.Item>
-              <Image src={second.img} style={{width:'100%'}}></Image>
-           
-          </Banner.Item>
-            ))
-          }
-     
-    </Banner>
-         
-     
-    
-
-
-
-        <Image src={require('../image/Home-page-img/slider2/D-1.0-UHP-05042024-ajioexclusives-header.jpg')}></Image>
-      </Row>
-
-      <Row style={{ backgroundColor: 'lightblue' }}>
-      <Carousel responsive={responsive} >
-        {
-          card2.map(a => (
-            <Card style={{ width: '18rem', backgroundColor: '#B3D5E0', border: 'none',marginLeft:'30px'}}>
-              <Card.Img variant="top" src={a.img} />
-
+          {everyone.map((d, index) => (
+            <Card key={index} style={{ width: '18rem', marginLeft: 20, border: 'none' }}>
+              <Card.Img variant="top" src={d.img} />
             </Card>
-          ))
-        }
-  </Carousel>
-      </Row>
-      {/* <Image src={require('../image/Home-page-img/slider2/D-1.0-UHP-18042024-DB-header.jpg')}></Image> */}
-      {/* ----------------------------------------------------------------------------------- */}
-
-
-
-
-
-      
-    
-{/* /////////////////////////////////////////////////////////////////////////////////////////////////// */}
-      <Row>
-        {/* Card3 Img are is */}
-        <Image src={require('../image/Home-page-img/warm wear/D-1.0-UHP-05042024-bestsellers-header.jpg')}></Image>
-
-
-        <Carousel responsive={responsive} >
-        {
-          card3.map(b => (
-            <Card style={{ width: '28rem', border: 'none'}}>
-              <Card.Img variant="top" src={b.img} style={{width:'45vw'}} />
-
-            </Card>
-          ))
-        }
-  </Carousel>
+          ))}
+        </Carousel>
       </Row>
 
+      <Row className="mb-3">
+        <Image src={require('../image/Home-page-img/slider2/M-1.0-UHP-18042024-DailyBanner-header.jpg')} fluid />
+        <Image src={require('../image/Home-page-img/slider2/D-1.0-UHP-18042024-DB-header.jpg')} fluid />
+      </Row>
 
-      
-       
-      
-
-        <Row>
-        <Banner>
-          {
-            offer.map(off =>(
-              <Banner.Item>
-              <Image src={off.img} style={{width:'100%'}}></Image>
-                
+      <Row className="mb-3">
+        <Col>
+          <Banner>
+            {secondslider.map((second, index) => (
+              <Banner.Item key={index}>
+                <Image src={second.img} style={{ width: '100%' }} />
               </Banner.Item>
-            ))
-          }
+            ))}
+          </Banner>
+        </Col>
+      </Row>
 
-    </Banner>
-        </Row>
+      <Row className="mb-3">
+        <Image src={require('../image/Home-page-img/slider2/D-1.0-UHP-05042024-ajioexclusives-header.jpg')} fluid />
+      </Row>
 
-    </>
-  )
+      <Row className="mb-3" style={{ backgroundColor: 'lightblue' }}>
+        <Carousel responsive={responsive}>
+          {card2.map((a, index) => (
+            <Card key={index} style={{ width: '18rem', backgroundColor: '#B3D5E0', border: 'none', marginLeft: '30px' }}>
+              <Card.Img variant="top" src={a.img} />
+            </Card>
+          ))}
+        </Carousel>
+      </Row>
+
+      <Row className="mb-3">
+        <Image src={require('../image/Home-page-img/warm wear/D-1.0-UHP-05042024-bestsellers-header.jpg')} fluid />
+      </Row>
+
+      <Row className="mb-3">
+        <Carousel responsive={responsive}>
+          {card3.map((b, index) => (
+            <Card key={index} style={{ width: '28rem', border: 'none' }}>
+              <Card.Img variant="top" src={b.img} style={{ width: '45vw' }} />
+            </Card>
+          ))}
+        </Carousel>
+      </Row>
+
+      <Row className="mb-3">
+        <Col>
+          <Banner>
+            {offer.map((off, index) => (
+              <Banner.Item key={index}>
+                <Image src={off.img} style={{ width: '100%' }} />
+              </Banner.Item>
+            ))}
+          </Banner>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
-export default Home
+export default Home;

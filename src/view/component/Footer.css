@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -42,9 +42,9 @@
 
 .first-col a:hover{
     color: rgb(182, 127, 45);
-}
+} 
 
-/* ----------------------------------- */
+/* ----------------------------------- 
 
 
 .third{
@@ -76,7 +76,7 @@
 }
 
 
-/* --------------------------------------- */
+/* --------------------------------------- 
 
 hr{
   
@@ -124,4 +124,135 @@ border-radius: 30px;
     object-fit: contain;
     mix-blend-mode: color-burn;
 
- }
+
+ } */
+
+
+
+ 
+ /* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans';
+}
+
+.Container {
+    width: 100%;
+    min-height: 100vh; /* Use min-height to ensure content fits on smaller screens */
+    background: rgb(36, 83, 121);
+    padding: 20px;
+}
+
+/* Flexbox Layout */
+.main-box {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-around; /* Distributes space evenly */
+}
+
+/* Column Styles */
+.first-col, .third {
+    color: beige;
+    display: grid;
+    gap: 3px;
+    margin: 20px; /* Adds space around columns */
+}
+
+/* Headings */
+.first-col h4, .third h4 {
+    margin-top: 4rem;
+    padding-bottom: 10px;
+}
+
+/* Links */
+.first-col a, .third a {
+    text-decoration: none;
+    color: beige;
+    margin: 5px 2px;
+}
+
+.first-col a:hover, .third a:hover {
+    color: rgb(182, 127, 45);
+}
+
+/* Horizontal Rule */
+hr {
+    border: 2px solid beige;
+    border-radius: 30px;
+}
+
+/* Payment Section */
+.payment {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment h3 {
+    color: beige;
+    font-weight: 500;
+}
+
+.payment h5 {
+    color: beige;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.payment h5 button {
+    border: none;
+    margin-left: .5rem;
+    border-radius: 5px;
+    padding: 5px 9px;
+}
+
+.payment .lo .img {
+    display: flex;
+}
+
+.Container .lo {
+    display: flex;
+    flex-direction: row;
+}
+
+.Container .lo .img {
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-box {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .first-col, .third {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    .payment h5 button {
+        padding: 7px 12px; /* Increase button padding for better touch support */
+    }
+}
+
+@media (max-width: 480px) {
+    .payment h3 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .payment h5 {
+        font-size: 1.2rem;
+    }
+
+    .Container .lo .img {
+        width: 30%; /* Adjust image size for very small screens */
+    }
+}
+
+
+
