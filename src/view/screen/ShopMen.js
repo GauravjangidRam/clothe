@@ -16,46 +16,6 @@ function ShopMen() {
   }, []);
 
 
-
-  // const [img, setImg]=useState('')
-
-  // const[productDetails,SetProductDetails]=useState('')
-  // const loc = useLocation('')
-
-  // useEffect(()=>{
-  //     console.log(loc.state)
-  //     SetProductDetails(loc.state)
-  // },[])
-
-  // function ImageChange(img)
-  // {
-  //     setImg(img);
-  // }
-
-  // const cloth =[
-  //     {
-  //         id:1,
-  //         img:require('../image/Home-page-img/Men/Shop/Men Clothes/-473Wx593H-466817674-seagreen-MODEL.jpg'),
-  //         rating:5
-  //     },
-
-  //     {
-  //         id:1,
-  //         img:require('../image/Home-page-img/Men/Shop/Men Clothes/-473Wx593H-466817674-seagreen-MODEL2.jpg'),
-  //         rating:4.5
-  //     },
-  //     {
-  //         id:1,
-  //         img:require('../image/Home-page-img/Men/Shop/Men Clothes/-473Wx593H-466817674-seagreen-MODEL3.jpg'),
-  //         rating:4
-  //     },
-  //     {
-  //         id:1,
-  //         img:require('../image/Home-page-img/Men/Shop/Men Clothes/-473Wx593H-466817674-seagreen-MODEL4.jpg'),
-  //         rating:4.8
-  //     },
-  // ]
-
   return (
     <>
       <Container>
