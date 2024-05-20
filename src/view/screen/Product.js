@@ -29,7 +29,7 @@ export default function Product() {
           {
             fide&&fide.map(value=>(
               <Card style={{width:'22rem'}} className="card" onClick={()=>nav1('/ProductDetails',{state:value})} >
-                <Image src={value.img} className="img1" />
+                <Image src={value.img} className="img1" style={{cursor:"pointer"}}/>
 
                 <div className="details">
                   <h5 className="brown-text">{value.name}</h5>

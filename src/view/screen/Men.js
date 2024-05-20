@@ -121,7 +121,7 @@ function Men() {
                         <Carousel responsive={responsive} >
                               {
                                     mencard.map(mencardfirst => (
-                                          <Card style={{ width: '24rem', border: 'none' }} onClick={ProData}>
+                                          <Card style={{ width: '24rem', border: 'none' ,cursor:"pointer"}} onClick={ProData}>
                                                 <Card.Img variant="top" src={mencardfirst.img} style={{ }} />
 
                                           </Card>
@@ -140,7 +140,7 @@ function Men() {
                               click1 && click1.map(MainShop => (
                                     <Col onClick={() => nav1('/Product', { state: MainShop })} >
 
-                                          <Card onClick={ProData} style={{ width: '15rem', justifyContent: 'space-evenly', border: 'none', backgroundColor: '#FCE5B5', marginLeft: 40, margin: 0, padding: 0 }} lg={3} md={3} sd={3} >
+                                          <Card onClick={ProData} style={{ width: '15rem', justifyContent: 'space-evenly', border: 'none', backgroundColor: '#FCE5B5',cursor:"pointer", marginLeft: 40, margin: 0, padding: 0 }} lg={3} md={3} sd={3} >
                                                 <Card.Img variant="top" src={MainShop.img} />
 
                                           </Card>
