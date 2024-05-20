@@ -237,12 +237,39 @@ transform:translate(to left );
 
 
 .Navbar {
+  display: flex;
   padding: 1rem;
+  justify-content: space-between;  
 }
 
 .brand {
   font-size: 1.5rem;
   font-weight: bold;
+}
+.list-style .section ul{
+  display: flex;
+  justify-content: space-around !important;
+  /* border:1px solid white; */
+  padding: 0;
+  align-items: center;
+  width:100%;
+  margin: 0;
+  /* max-width:20%;  */
+}
+.list-style{
+  display: flex;
+  justify-content: space-between !important;
+
+  /* width:20%;
+  max-width:20%; */
+  
+}
+.section{
+  display: flex;
+  width: 100%;
+  /* border:1px solid yellow; */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-style, .logout-style, .login-style, .register-style {
@@ -254,8 +281,34 @@ transform:translate(to left );
 .nav-style:hover, .logout-style:hover, .login-style:hover, .register-style:hover {
   color: lightgray;
 }
+.logStatus{
+  justify-content: center;
+  /* margin-left:10rem; */
+  /* margin-right: -2rem; */
+
+}
+.logStatus, .logStatus a{
+  display: flex;
+  
+  /* margin: 0; */
+
+  
+}
+li:hover a{
+  text-decoration: none;
+  transition: 0.2s;
+  color:white;
+  border-bottom: 0;
+}
+li:not(:hover) a{
+  text-decoration: none;
+  transition: 0.5s;
+}
 
 @media (max-width: 767px) {
+  nav{
+    padding:0px;
+  }
   .Navbar {
     flex-direction: column;
   }
@@ -277,4 +330,23 @@ transform:translate(to left );
   .form-inline .btn {
     width: 100%;
   }
+  .list-style{
+    display: flex;
+    flex-direction: column !important;
+    
+  }
+  .list-style .section ul{
+    padding:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logStatus{
+    align-self: center;
+    display: flex;
+  }
+
+  /* .react-multi-carousel-track{
+    width: 100px;
+  }  */
 }
