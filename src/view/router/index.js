@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../screen/Home'
 import Header from '../component/Header'
 import Men from '../screen/Men';
-import ShopMen from '../screen/ShopMen';
 import Login  from '../screen/Login';
 import Register from '../screen/Register'
 import Product from '../screen/Product';
@@ -40,7 +39,7 @@ export default function RouterName(){
            
             {/* Men Section location */}
             <Route path='/Men' Component={Men}/>
-            <Route path='/ShopMen' Component={ShopMen}/>
+         
             <Route path='/Product' Component={Product}/>
 
 
