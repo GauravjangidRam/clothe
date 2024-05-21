@@ -6,8 +6,16 @@ import { BannerImg, EveryDay, card2, card3, mainslider, offer, secondslider } fr
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+
+
+  const nav = useNavigate('')
+
+  const nextPage=()=>{
+    nav('/Product')
+  }
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -26,6 +34,7 @@ function Home() {
       items: 1
     }
   };
+
 
   const [everyone, setEvery] = useState([]);
 
@@ -55,7 +64,7 @@ function Home() {
       <Row className="mb-3">
         <Carousel responsive={responsive}>
           {everyone.map((d, index) => (
-            <Card key={index} style={{ width: '18rem', marginLeft: 20, border: 'none' }}>
+            <Card key={index} style={{ width: '18rem', marginLeft: 20, border: 'none' }} onClick={()=>nav("/Product")}>
               <Card.Img variant="top" src={d.img} />
             </Card>
           ))}
@@ -86,7 +95,7 @@ function Home() {
       <Row className="mb-3" style={{ backgroundColor: 'lightblue' }}>
         <Carousel responsive={responsive}>
           {card2.map((a, index) => (
-            <Card key={index} style={{ width: '18rem', backgroundColor: '#B3D5E0', border: 'none', marginLeft: '30px' }}>
+            <Card key={index} style={{ width: '18rem', backgroundColor: '#B3D5E0', border: 'none', marginLeft: '30px' }}  onClick={()=>nav("/Product")}>
               <Card.Img variant="top" src={a.img} />
             </Card>
           ))}
@@ -100,7 +109,7 @@ function Home() {
       <Row className="mb-3">
         <Carousel responsive={responsive}>
           {card3.map((b, index) => (
-            <Card key={index} style={{ width: '28rem', border: 'none' }}>
+            <Card key={index} style={{ width: '28rem', border: 'none' }}  onClick={()=>nav("/Product")}>
               <Card.Img variant="top" src={b.img} style={{ width: '45vw' }} />
             </Card>
           ))}

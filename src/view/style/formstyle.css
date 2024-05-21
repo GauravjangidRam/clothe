@@ -1,160 +1,134 @@
-.container-Row{
-  background-color: rgb(130, 159, 213);
- width: 30rem;
- height: 28rem;
- border-radius: 2rem;
- margin: 0 auto;
- 
-}
-.container-Row:hover{
-  /* -webkit-box-shadow:2px 2px 10px red ;
-  background:linear-gradient(#e66465, #9198e5, rgb(179, 245, 179));  */
+/* .container-Row */
+.container-Row {
+  background-color: #f0f0f0; /* Light gray color */
+  width: 30rem;
+  height: 28rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 
-#loginForm{
+.container-Row:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* #loginForm */
+#loginForm {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   height: 30rem;
+  color: #000; /* Black text color */
 }
 
-#loginForm h2{
-  border-bottom: .1rem solid black;
-  border-radius: 1rem ;
+#loginForm h2 {
+  border-bottom: 0.1rem solid #000;
+  border-radius: 1rem;
   width: 15rem;
   text-align: center;
   justify-content: center;
   margin-left: 6rem;
-
 }
 
-/* #loginForm h2:hover{
-  border-bottom: .1rem solid black;
-  border-radius: 10rem ;
- background:linear-gradient(#e66465,#9198e5); 
-  font-size: 30px;
-  font-weight: 700;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} */
-
-#loginForm input{
-border-radius: 2rem ;
-outline: none;
-border:none;
-width:20rem;
-margin: 0 auto;
-transition: all ease .3s;
-}
-#loginForm input:hover{
-  font-size: 20px;
-  width: 100%;
-
+#loginForm input {
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  width: 20rem;
+  margin: 0 auto;
+  transition: all ease 0.3s;
+  background-color: #fff; /* White background for input fields */
+  color: #000; /* Black text color */
+  padding: 0.5rem 1rem;
 }
 
-::placeholder{
-  position:absolute;
+#loginForm input:hover,
+#loginForm input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+::placeholder {
+  position: absolute;
   left: 1rem;
-
+  color: #999;
 }
 
-
-::placeholder:hover
-{
+::placeholder:hover {
   font-weight: 500;
-  color:blue ;
-
+  color: #666;
 }
-#loginForm button{
+
+#loginForm button {
   width: 20rem;
   border: none;
-  color: white;
-  background-color: rgb(79, 119, 138);
- margin: 0 auto;
- border-radius: 2rem;
-  transition:.7s;
+  color: #fff;
+  background-color: #333;
+  margin: 0 auto;
+  border-radius: 2rem;
+  transition: 0.7s;
+  padding: 0.5rem 1rem;
 }
 
-
-#loginForm button:hover{
-    width: 80%;
-    font-size: 20px;
-    font-weight: 500;
-    background:  rgb(77, 127, 77);
-    color: #c6c6c6;
-    
+#loginForm button:hover {
+  width: 80%;
+  font-size: 20px;
+  font-weight: 500;
+  background: #555;
+  color: #ccc;
 }
 
-
-#loginForm .a-style{
-  /* background-color: aqua;  */
+#loginForm .a-style {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:2rem;
+  gap: 2rem;
   align-items: center;
 }
 
-#loginForm .a-style a{
+#loginForm .a-style a {
   text-decoration: none;
   font-weight: 300;
   font-size: 15px;
-  color: darkblue;
+  color: #333;
 }
 
-#loginForm .a-style a:nth-child(1){
-
+#loginForm .a-style a:nth-child(1) {
   font-weight: 500;
 }
-/* #loginForm .a-style a:nth-child(1):hover{
-  font-size: 20px;
-  border-bottom:2px solid rgb(22, 27, 22);
-  border-bottom-color:gray ;
-  background: lavender;
-  border-radius: 10px;
 
-
-} */
-
-#loginForm .a-style a:nth-child(2){
+#loginForm .a-style a:nth-child(2) {
   font-size: 25px;
-
 }
-#loginForm .a-style a:nth-child(2):hover{
-  /* font-size: 30px;
-  border: 2px solid;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius:20px ; */
-  /* background:lightskyblue ; */
 
-
+#loginForm .a-style a:nth-child(2):hover {
+  color: #000;
 }
-/* --------------------------------------------------------------- */ 
 
-
-/* ------------------------------------------------------------------ */
-/* Product Page ke CSS hai  */
-
-
-/* formstyle.css */
-
+/* Product Page CSS */
 .cloth-top {
   text-align: center;
-  border-bottom: 2px solid rgb(15, 12, 12);
+  border-bottom: 2px solid #000;
   font-weight: 900;
   position: relative;
   width: 30%;
   margin: 0 auto;
   border-radius: 30px;
-  box-shadow: 0 2px 11px rgb(71, 68, 68);
+  box-shadow: 0 2px 11px rgba(0, 0, 0, 0.2);
+  color: #000;
 }
 
 .card {
   transition: transform 0.2s;
   cursor: pointer;
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .img1 {
@@ -169,15 +143,16 @@ transition: all ease .3s;
 }
 
 .brown-text {
-  color: #8B4513;
+  color: #666;
 }
 
 .rat {
-  background-color: #FFD700;
+  background-color: #ccc;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  color: #000;
 }
 
 .price {

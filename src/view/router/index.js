@@ -16,6 +16,7 @@ import AddToCart from '../screen/AddToCart';
 import Kids from '../screen/Kids';
 import WomenDetails from '../screen/WomenDetails';
 import ProductDetailsWomen from '../screen/ProdutDetailsWomen';
+import Payment from '../screen/Payment';
 
 
 
@@ -56,6 +57,7 @@ export default function RouterName(){
             {/* BuySection OF Product */}
           <Route path='/ProductDetails'Component={ProductDetails}/>
           <Route path='/AddToCart'Component={AddToCart}/>
+          <Route path='/Payment' Component={Payment}/>
           <Route path='/Login' Component={Login}/>
           
 
