@@ -33,7 +33,8 @@ const Register = () => {
     localStorage.setItem("PhoneNo.", formData.phoneNumber)
     localStorage.setItem("address.", formData.address)
     localStorage.setItem("pincode", formData.pincode)
-    window.location='/login'
+    console.log(formData)
+    window.location='/Login'
     alert('You Are Successfull Register')
     // Reset form fields
     setFormData({

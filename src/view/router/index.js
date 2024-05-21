@@ -27,7 +27,7 @@ export default function RouterName(){
     const [userdata ,setUserData]=useState('');
 
     useEffect(()=>{
-        setUserData(localStorage.getItem("user"))
+        setUserData(localStorage.getItem("username"))
     },[])
     return(
 
@@ -53,8 +53,8 @@ export default function RouterName(){
             {/* BuySection OF Product */}
           <Route path='/ProductDetails'Component={ProductDetails}/>
           <Route path='/AddToCart'Component={AddToCart}/>
-
-
+          <Route path='/Login' Component={Login}/>
+          
 
           {/* Login And Register  Section  */}
 
@@ -67,7 +67,7 @@ export default function RouterName(){
           <Route path='/Login' Component={Login}/>
           <Route path='/' Component={Home}/>
 
-          <Route path='/Register' Component={Register}/>
+            <Route path='/Register' Component={Register}/>
             </>
           }
 
