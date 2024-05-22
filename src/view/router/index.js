@@ -17,6 +17,7 @@ import Kids from '../screen/Kids';
 import WomenDetails from '../screen/WomenDetails';
 import ProductDetailsWomen from '../screen/ProdutDetailsWomen';
 import Payment from '../screen/Payment';
+import { ProductDetailsKids } from '../screen/ProductDetailsKids';
 
 
 
@@ -50,7 +51,12 @@ export default function RouterName(){
             <Route path='/Women' Component={Women}/>
             <Route path='/WomenProductPage' Component={WomenProduct}/>
             <Route path='/WomenDetails' Component={WomenDetails}/>
+
+
+
+
             <Route path='/Kids' Component={Kids}/>
+            <Route path='/ProductDetailsKids' Component={ProductDetailsKids}/>
 
             <Route path='/ProductDetailsWomen' Component={ProductDetailsWomen}/>
 

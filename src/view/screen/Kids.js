@@ -2,13 +2,17 @@
 
 
 
-import { Col, Container, Image, Row } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
+import { Col, Container, Row } from 'react-bootstrap';
+
 import Card from 'react-bootstrap/Card';
 import { kidspage } from '../data/kidsdata';
 import '../../App.css';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Kids() {
+  const navigate = useNavigate("")
+  
   return (
     <>
       <div style={{ width: "20rem", margin: "0 auto" }}>
@@ -20,8 +24,8 @@ export default function Kids() {
           {
             kidspage && kidspage.map((value, index) => (
               <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
-                <Card style={{ width: '100%' }}>
-                  <Card.Img variant="top" src={value.img} />
+                <Card style={{ width: '100%' }}  onClick={() => navigate('/ProductDetailsKids', { state: value })} >
+                  <Card.Img variant="top" src={value.img}  />
                   <Card.Body>
                     <Card.Title className="brown-text">{value.name}</Card.Title>
                     <Card.Text>

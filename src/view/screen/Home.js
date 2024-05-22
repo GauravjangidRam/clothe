@@ -2,20 +2,19 @@
 import { useEffect, useState } from 'react';
 import { Col, Row, Image, Container } from 'react-bootstrap';
 import { Carousel as Banner } from 'react-bootstrap';
-import { BannerImg, EveryDay, card2, card3, mainslider, offer, secondslider } from '../data/data';
+import {  EveryDay, card2, card3, mainslider, offer, secondslider } from '../data/data';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { useNavigate } from 'react-router-dom';
+import Loader from './Loader';
 
 function Home() {
 
 
   const nav = useNavigate('')
 
-  const nextPage=()=>{
-    nav('/Product')
-  }
+ 
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -37,11 +36,25 @@ function Home() {
 
 
   const [everyone, setEvery] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setEvery(EveryDay);
-    console.log(EveryDay);
-  }, []);
+    useEffect(() => {
+        setEvery(EveryDay);
+        console.log(EveryDay);
+
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 3000); // 3 seconds
+
+        return () => clearTimeout(timer); // Cleanup the timer on component unmount
+    }, []);
+
+    if (loading) {
+        return <Loader />;
+    }
+
+ 
+
 
   return (
     <Container fluid>

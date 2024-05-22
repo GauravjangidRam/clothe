@@ -35,34 +35,88 @@
 .list-style {
   display: flex;
   justify-content: space-between !important;
-  /* width:20%; max-width:20%; */
+
 }
+
+/* .section {
+  display: flex;
+  gap: 2rem;
+  margin-left: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+} */
 
 .section {
   display: flex;
-  width: 100%;
-  /* border:1px solid yellow; */
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-left: 2rem;
 }
+
+.item-style {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 10px;
+  margin: 0 1s0px;
+  transition: color 0.3s ease;
+}
+
+.item-style::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e2d5d5;
+  transition: width 0.3s ease;
+}
+
+.item-style:hover {
+  color: #666;
+}
+
+.item-style:hover::before {
+  width: 100%;
+}
+/* Search Bar Style */
+
+.d-flex{
+ width: 20rem;
+ color: white;
+ display: flex;
+ position: absolute;
+ left: 35rem;
+}
+.me-2{
+  background-color: #bdafaf;
+}
+
+
+.d-flex .search-btn{
+  width: 3.8rem;
+ }
 
 .nav-style,
 .logout-style,
 .login-style,
 .register-style {
   color: white;
-  font-size: 1rem;
-  margin-right: 1rem;
+  font-size: .7rem;
+  margin-right: .1rem;
   position: relative;
   transition: all 0.3s ease;
 }
+
 
 .nav-style:hover,
 .logout-style:hover,
 .login-style:hover,
 .register-style:hover {
   color: lightgray;
-  transform: scale(1.1);
+  transform: scale(1.09);
 }
 
 .nav-style::before,

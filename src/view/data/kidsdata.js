@@ -10,6 +10,12 @@ export const kidspage=[
         size:["2Y","3Y","4Y","5Y","6Y","7Y" ],
         view:"9.94K",
         rating:"4.5",
+        sideimg:[
+                require('../image/Home-page-img/Kids/Kids Sideimg/1.jpg'),
+                require('../image/Home-page-img/Kids/Kids Sideimg/1.1.jpg'),
+                require('../image/Home-page-img/Kids/Kids Sideimg/1.2.jpg'),
+
+        ]
     },
     {
         id:2,
@@ -22,6 +28,12 @@ export const kidspage=[
         size:["2Y","3Y","4Y","5Y","6Y","7Y" ],
         view:"8.4K",
         rating:"3.8",  
+        sideimg:[require('../image/Home-page-img/Kids/Kids Sideimg/2.jpg'),
+            require('../image/Home-page-img/Kids/Kids Sideimg/2.1.jpg'),
+            require('../image/Home-page-img/Kids/Kids Sideimg/2.2.jpg'),
+            require('../image/Home-page-img/Kids/Kids Sideimg/2.3.jpg'),
+            require('../image/Home-page-img/Kids/Kids Sideimg/2.4.jpg'),
+        ]
     },
     {
         id:3,
@@ -34,7 +46,10 @@ export const kidspage=[
         size:["4Y","5Y","6Y","7Y" ,"8Y","10Y"],
         view:"1.4K",
         rating:"3.8",
-        
+        sideimg:[require('../image/Home-page-img/Kids/Kids Sideimg/3.1.jpg'),
+        require('../image/Home-page-img/Kids/Kids Sideimg/3.jpg')
+    ]
+      
     },
     {
         id:4,
@@ -47,7 +62,7 @@ export const kidspage=[
         size:["4Y","5Y","6Y","7Y" ,"8Y","10Y"],
         view:"2.7K",
         rating:"3.9",
-        
+        sideimg:[require('../image/Home-page-img/Kids/Kids Sideimg/4.jpg'),        ]
     },
     {
         id:5,
@@ -60,7 +75,10 @@ export const kidspage=[
         size:["4Y","5Y","6Y","7Y" ,"8Y"],
         view:"8.4K",
         rating:"4.2",
-        
+        sideimg:[require('../image/Home-page-img/Kids/Kids Sideimg/5.jpg'),
+            require('../image/Home-page-img/Kids/Kids Sideimg/5.1.jpg'),
+            require('../image/Home-page-img/Kids/Kids Sideimg/5.2.jpg'),
+        ]
     },
     {
         id:6,
@@ -73,7 +91,9 @@ export const kidspage=[
         size:["4Y","5Y","6Y","7Y" ,"8Y"],
         view:"6.3K",
         rating:"3.5",
-        
+        sideimg:[require('../image/Home-page-img/Kids/Kids Sideimg/6.jpg'),
+            require('../image/Home-page-img/Kids/Kids Sideimg/6.1.jpg'),
+        ]
     },
     
     {
@@ -87,6 +107,9 @@ export const kidspage=[
         size:["4Y","5Y","6Y","7Y" ,"8Y"],
         view:"3.4K",
         rating:"3.0",
-        
+        sideimg:[require('../image/Home-page-img/Kids/Kids Sideimg/7..jpg'),
+            require('../image/Home-page-img/Kids/Kids Sideimg/7.1.jpg'),
+            require('../image/Home-page-img/Kids/Kids Sideimg/7.2.jpg')
+        ]
     },
 ]
