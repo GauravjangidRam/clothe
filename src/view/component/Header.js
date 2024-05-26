@@ -1,9 +1,8 @@
 
 import '../../App.css';
 import { useEffect, useState } from 'react';
-import { Form, Button, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import 'boxicons';
 
 export default function Header() {
@@ -35,21 +34,8 @@ export default function Header() {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button className="search-btn" variant="outline-light">
-              Search
-            </Button>
-
-          </Form>
-
-          <div>
-          <a href="/AddToCart"><box-icon name='cart-alt' color='#ece7e7' ></box-icon></a>
+          <div className='cart-icon'>
+          <a href="/AddTo"><box-icon name='cart-alt' color='#ece7e7' ></box-icon></a>
           </div>
           {user ? (
             <Nav.Link href="/Logout" className="logout-style">
@@ -60,9 +46,9 @@ export default function Header() {
               <Nav.Link href="/Login" className="login-style">
                 LOGIN <span></span>
               </Nav.Link>
-              <Nav.Link href="/Register" className="register-style">
+              {/* <Nav.Link href="/Register" className="register-style">
                 REGISTER
-              </Nav.Link>
+              </Nav.Link> */}
             </div>
           )}
         </Navbar.Collapse>

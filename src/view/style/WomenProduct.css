@@ -1,0 +1,87 @@
+.Women-page{
+  margin-top: 10px;
+}
+.Women-Heading{
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+  width: 25%;
+  position: relative;
+  left: 28rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Women-card-1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: none;
+  gap: 2rem;
+}
+
+.Women-multi{
+  border: none;
+  display: flex;
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.women-multi:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Women-image {
+  width: 100%;
+  height: auto;
+}
+.Women-Details {
+  padding: 8px;
+}
+
+.Women-Name{
+  text-align: center;
+  color: rgb(209, 135, 45);
+}
+.Women-Name-2{
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+.Women-rating{
+  padding: 6px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+  left: 2.6rem;
+}
+.Women-Prices{
+  text-align: center;
+  margin-top: 15px;
+}
+.Women-newPrice{
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.Women-oldPrice{
+  font-size: 18px;
+  color: rgb(91, 82, 82);
+  margin-right: 10px;
+}
+.Women-offer{
+  color: orangered;
+  font-size: 12px;
+}
+
+.Women-saveprice{
+  text-align: center;
+  color: green;
+}

@@ -1,0 +1,129 @@
+  /* Container for the main content */
+.Men-Heading {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-bottom:1px solid black;
+ width: 30%;
+  border-radius: 30px;
+position: relative;
+left: 27.6rem;
+}
+
+.Men-Section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Men-cards {
+  margin-bottom: 20px;
+}
+
+.Men-mulitple {
+  border: 1px solid #f4f0f0;
+  border-radius: 10px;
+overflow: hidden;
+object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.Men-mulitple:hover {
+  transform: scale(1.01);
+}
+
+.Men-images {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.Men-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.Men-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(209, 124, 19);
+  margin: 10px 0;
+}
+
+.Men-Price-view {
+  background-color: #0a8e43;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.Men-Price-view:hover {
+ background-color: #0a8e43;
+}
+
+
+.Men-New-Price {
+  font-size: 19px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.Men-offer {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.Men-offer-value {
+  color: rgb(224, 111, 24);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.Men-New-Price del {
+  font-size: 14px;
+
+}
+.Men-save-price{
+  font-size: 17px;
+  color: #0a8e43;
+}
+
+@media (max-width: 1200px) {
+  .Men-cards {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (max-width: 992px) {
+  .Men-cards {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Men-cards {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .Men-name {
+    font-size: 16px;
+  }
+
+  .Men-Price-view {
+    padding: 5px;
+  }
+
+  .Men-New-Price {
+    font-size: 14px;
+  }
+
+  .Men-offer-value {
+    font-size: 14px;
+  }
+}

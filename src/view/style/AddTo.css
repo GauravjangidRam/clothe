@@ -1,0 +1,53 @@
+/* AddTo.css */
+
+.AddTo-Heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .AddTo-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .AddTo-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .AddTo-main-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .AddTo-Card-Details {
+    flex: 1;
+  }
+  
+  .AddTo-card-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .AddTo-Size,
+  .AddTo-Color,
+  .AddTo-Price {
+    margin: 5px 0;
+  }
+  
+  .AddTo-Price {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .AddTo-Price::before {
+    content: "₹";
+  }
+  

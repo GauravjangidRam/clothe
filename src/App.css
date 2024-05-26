@@ -1,11 +1,9 @@
-.Navbar {
-  /* max-height: 20vh; */
-  display: flex;
-  padding: 1rem;
-  justify-content: space-between;
+.Navbar{
+  padding: 10px 10px ;
+  
 }
-
 .brand {
+  margin-left: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
   position: relative;
@@ -21,45 +19,25 @@
   }
 }
 
-.list-style .section ul {
+.me-auto {
+  flex-grow: 1;
   display: flex;
-  justify-content: space-around !important;
-  /* border:1px solid white; */
-  padding: 0;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  /* max-width:20%; */
+  justify-content: center;
 }
-
-.list-style {
-  display: flex;
-  justify-content: space-between !important;
-
-}
-
-/* .section {
-  display: flex;
-  gap: 2rem;
-  margin-left: 2rem;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-left: 2rem;
+  justify-content: center;
+  gap: 20px;
 }
 
 .item-style {
   position: relative;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   padding: 10px 10px;
-  margin: 0 1s0px;
+  margin: 0 10px;
   transition: color 0.3s ease;
 }
 
@@ -75,34 +53,27 @@
 }
 
 .item-style:hover {
-  color: #666;
+  color: #bdb3b3;
 }
 
 .item-style:hover::before {
   width: 100%;
 }
-/* Search Bar Style */
 
-.d-flex{
- width: 20rem;
- color: white;
- display: flex;
- position: absolute;
- left: 35rem;
+
+
+.cart-icon {
+  font-size: 30px;
+  width: 10px;
+  color: #ece7e7;
+  margin-right: 3rem; 
+  transition: color 0.3s ease;
+  font-weight: 800;
 }
-.me-2{
-  background-color: #bdafaf;
-}
-
-
-.d-flex .search-btn{
-  width: 3.8rem;
- }
 
 .nav-style,
 .logout-style,
-.login-style,
-.register-style {
+.login-style {
   color: white;
   font-size: .7rem;
   margin-right: .1rem;
@@ -113,16 +84,14 @@
 
 .nav-style:hover,
 .logout-style:hover,
-.login-style:hover,
-.register-style:hover {
+.login-style:hover{
   color: lightgray;
   transform: scale(1.09);
 }
 
 .nav-style::before,
 .logout-style::before,
-.login-style::before,
-.register-style::before {
+.login-style::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -135,35 +104,20 @@
 
 .nav-style:hover::before,
 .logout-style:hover::before,
-.login-style:hover::before,
-.register-style:hover::before {
+.login-style:hover::before{
   width: 100%;
 }
 
 .logStatus {
   justify-content: center;
   letter-spacing: 0.2rem;
-  /* margin-left:10rem; */
-  /* margin-right: -2rem; */
 }
 
 .logStatus,
 .logStatus a {
   display: flex;
-  /* margin: 0; */
 }
 
-li:hover a {
-  text-decoration: none;
-  transition: 0.2s;
-  color: white;
-  border-bottom: 0;
-}
-
-li:not(:hover) a {
-  text-decoration: none;
-  transition: 0.5s;
-}
 
 @media (max-width: 767px) {
   nav {
@@ -196,17 +150,6 @@ li:not(:hover) a {
     width: 100%;
   }
 
-  .list-style {
-    display: flex;
-    flex-direction: column !important;
-  }
-
-  .list-style .section ul {
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
 
   .logStatus {
     align-self: center;
@@ -227,73 +170,4 @@ li:not(:hover) a {
     align-self: center;
   }
 
-  /* .react-multi-carousel-track{ width: 100px; } */
-}
-
-.brown-text {
-  color: #8B4513;
-}
-
-.rat {
-  background-color: #33ff00;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.price {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.off {
-  margin-right: 5px;
-  color: gray;
-}
-
-/* --------------------------------------------------------------------------- */
-.Navbar {
-  padding: 0.5rem 1rem;
-}
-
-.brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.section {
-  display: flex;
-  flex-direction: row;
-}
-
-.section .nav-link {
-  margin-right: 1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.logStatus {
-  display: flex;
-  flex-direction: row;
-}
-
-.logStatus .nav-link {
-  margin-left: 1rem;
-  color: #ffffff;
-}
-
-@media (max-width: 992px) {
-  .section {
-    flex-direction: column;
-  }
-
-  .logStatus {
-    flex-direction: column;
-  }
-
-  .logStatus .nav-link {
-    margin-left: 0;
-    margin-top: 0.5rem;
-  }
 }

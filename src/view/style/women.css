@@ -1,99 +1,84 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
+.text-1 {
+  font-size: 30px;
+  background-color: #dcd8d8;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 30% ;
+  border-bottom-style: calc(20px);
+  border-radius: 50px;
+  margin-bottom: 30px;
 }
 
-
-.Heading{
-   
-    position: relative;
-    left: 20rem;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
-.Heading h1{
-    text-align: center;
-    font-weight: 400;
-    color: rgb(57, 89, 109);
-}
-.Heading hr{
-
-margin: 0 auto;
-   border-radius:2px;
-   width: 30%;
-   border: 2px solid black;
-
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* -----------------------Card Style------------------------------- */
+/* .card {
+  width: 15rem;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover;
+} */
 
-.women-Product{
- /* display: flex; */
- gap:2rem;
-}
-
-.product .card{
-border: none;
-border-radius: 10px;
-}
-.product .card .img1{
-
-border-radius: 10px;
-}
-
-.card {
-    display: flex;
-    border-radius: 7px;
-    
+.img1 {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: contain;
 }
 
-.details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-.details h5{
-    color: rgb(237, 151, 20);
-}
-.details p>span{
-    font-size: .9rem;
-    gap: 1rem;
-    font-weight: 300;
-    color: rgb(104, 101, 101);
+.details {
+  padding: 15px;
 }
 
-.details .rat{
-    background: rgb(57, 158, 57);
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
-    margin-bottom: 10px;
-    color: rgb(255, 251, 246);
+.brown-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8B4513;
+  margin: 0;
 }
 
-.details .price>span{
-font-weight: 900;
-font-size: 20px;
-color: black;
+.details p {
+  margin: 5px 0;
+  color: #555;
 }
 
-.details .price del{
-    color: rgb(104, 101, 101);
-    margin-left: 2px;
-    font-size: 15px;
-    font-weight:700 ;
-}
-.details .price .off{
-    color: rgb(237, 151, 20);
-    font-size: 14px;
-    margin-left: 10px;
+.rat {
+  background-color: #086c17;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.details >h6{
-    color: rgb(40, 155, 40);
+.price {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.price del {
+  color: #999;
+  margin-left: 10px;
+}
+
+.off {
+  color: #d9534f;
+  margin-left: 10px;
+}
+
+.details h6 {
+  color: #5cb85c;
+  margin-top: 10px;
+  font-size: 14px;
 }

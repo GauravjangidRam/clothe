@@ -35,10 +35,7 @@ export default function Women() {
     return (
 
         <>
-        <div className="Heading">
-            <h1>Women Clothes</h1>
-            <hr />
-        </div>
+     
         <Row>
             <WomenPage className="main-slider-img" style={{width:"100%"}}>
                 {womenslider.map((value, index) => (

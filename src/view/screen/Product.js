@@ -1,6 +1,5 @@
 import { Col, Container, Row, Image } from "react-bootstrap";
-import "../style/formstyle.css";
-import Button from "react-bootstrap/Button";
+import '../style/Product.css'
 import Card from "react-bootstrap/Card";
 import { productcard } from "../data/productdata";
 import { useEffect, useState } from "react";
@@ -17,28 +16,29 @@ export default function Product() {
   return (
     <>
       <Container>
-        <Row className="cloth-top">
+        <Row className="Men-Heading">
           <h3>Clothing</h3>
         </Row>
 
-        <Row className="product" style={{ marginTop: '20px' }}>
+        <Row className="Men-Section" >
           {
             fide && fide.map((value, index) => (
-              <Col md={6} lg={4} xl={3} key={index} className="mb-4">
-                <Card className="card" onClick={() => nav1('/ProductDetails', { state: value })}>
-                  <Image src={value.img} className="img1" style={{ cursor: "pointer" }} />
+              <Col md={6} lg={4} xl={3} key={index}className="Men-cards">
+                <Card className="Men-mulitple" onClick={() => nav1('/ProductDetails', { state: value })}>
+                  <Image src={value.img} className="Men-images"/>
 
-                  <div className="details">
-                    <h5 className="brown-text">{value.name}</h5>
+                  <div className="Men-details">
+                    <h5 className="Men-name">{value.name}</h5>
                     <p><span>{value.name1}</span></p>
-                    <button className="rat">{value.rating} | {value.view}</button>
-                    <p className="price">
+                    <button className="Men-Price-view">{value.rating} | {value.view}</button>
+                    <p className="Men-New-Price ">
                       <span>&#8377;{value.newPrice}</span>
-                      <del><span className="off" style={{ color: "gray", marginRight: "5px" }}>&#8377;{value.oldPrice}</span></del>
-                      {value.offer}
+                      <del><span className="Men-offer" >&#8377;{value.oldPrice}</span></del>
+                        <span className="Men-offer-value">{value.offer}</span>
                     </p>
-                    <h6>{value.savePrice}</h6>
+                    <h6 className="Men-save-price">{value.savePrice}</h6>
                   </div>
+                 
                 </Card>
               </Col>
             ))

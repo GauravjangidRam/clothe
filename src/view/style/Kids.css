@@ -1,0 +1,108 @@
+/* App.css */
+
+/* Title */
+.Kids-title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  /* Horizontal rule */
+  .Kids-hr {
+    border: 2px solid black;
+    margin-bottom: 30px;
+  }
+  
+
+  /* Card */
+  .Kids-card {
+    width: 100%;
+  }
+  
+  /* Card Image */
+  .Kids-card-img {
+    width: 100%;
+  }
+  
+  /* Card Body */
+  .Kids-card-body {
+    padding: 15px;
+  }
+  
+  .Kids-animation{
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .Kids-animation:hover{
+   box-shadow: 0 0 5px  lightsalmon;
+   transform: scale(1.01);
+  }
+  /* Product Name */
+  .Kids-name-0 {
+    font-size: 1.2rem;
+    color: rgb(218, 138, 41);
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Product Name 1 */
+  .Kids-name-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .kids-name-2{
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  /* Rating Button */
+  .Kids-rating-1 {
+    background-color: #188544;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 68px;
+  }
+  
+ 
+  /* Price */
+  .Kids-price {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  /* New Price */
+  .Kids-NewPrice {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Old Price */
+  .Kids-oldPrice {
+    font-size: 0.9rem;
+    color: gray;
+    margin-right: 10px;
+
+  }
+  
+  /* Offer */
+  .Kids-Offer-0 {
+    font-size: 1.1rem;
+    color: orangered;
+    font-weight: 400
+  }
+  
+  /* Save Price */
+  .Kids-SavePrice {
+    font-size: 0.9rem;
+    color: green;
+  }
+  

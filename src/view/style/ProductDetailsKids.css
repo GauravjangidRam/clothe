@@ -1,0 +1,160 @@
+
+
+   /* ProductDetailsKids.css */
+
+/* Heading */
+.kidsHeading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Main heading */
+.KidsMainHeading {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+/* Horizontal line */
+.Kids-heading-line {
+  border: 2px solid black;
+  margin-top: 5px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+/* Main image section */
+.Kids-Main-Image {
+  margin-top: 20px;
+}
+
+/* Image style */
+.Kids-img-style {
+  width: 55%;
+  height: 400px;
+position: relative;
+left: 4rem;
+border-radius: 20px;
+}
+
+/* Image section */
+.Kids-image-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 2rem;
+}
+
+/* Left image style */
+.Kids-left-img-style {
+  width: 100%;
+  height: 135px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.Kids-left-img-style:hover {
+ box-shadow: 0 5px 10px black;
+ transform: scale(1.1 );
+}
+
+/* Right details section */
+.Kids-right-details {
+  padding-left: 20px;
+}
+
+/* Right box */
+.Kids-right-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Name 1 */
+.Kids-Name-1 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: rgb(200, 131, 40);
+  text-align: center;
+}
+
+/* Name 2 */
+.Kids-Name-2 {
+  color: #1b1818;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Rating */
+.Kids-Rating {
+  margin-bottom: 10px;
+}
+
+/* Rating button */
+.Kids-btn-rating {
+  background-color: #13742b;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+ position: relative;
+ left: 5rem;
+}
+
+
+/* New price */
+.Kids-newPrice {
+  font-size: 1.2rem;
+  margin-top: 0;
+  /* color: #1b1818; */
+  margin-right: 10px;
+  text-align: center;
+}
+.Kids-{
+  color: #000;
+}
+
+/* MRP */
+.Kids-mrp {
+  margin-top: 5px;
+  display: flex;
+ justify-content: center;
+}
+.Kids-Old-Prce{
+  color: gray;
+  margin-right: 10px;
+}
+.Kids-Offer-s{
+  color: orangered;
+}
+/* Add to cart and Buy now buttons */
+.Kids-buy-add {
+  margin-top: 20px;
+}
+.Kids-Pr{
+  text-align: center;
+}
+
+/* Add to cart button */
+.Kids-Add-btn,
+.Kids-Buy-btn {
+  background-color: #070807;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Success message */
+.success-message {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
