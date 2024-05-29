@@ -70,6 +70,20 @@
   transition: color 0.3s ease;
   font-weight: 800;
 }
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
 
 .nav-style,
 .logout-style,

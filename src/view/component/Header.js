@@ -3,7 +3,7 @@ import '../../App.css';
 import { useEffect, useState } from 'react';
 import { Nav } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
-import 'boxicons';
+import 'boxicons'; 
 
 export default function Header() {
   const [user, setUser] = useState("");
@@ -57,4 +57,6 @@ export default function Header() {
     </>
   );
 }
+
+
 

@@ -8,6 +8,7 @@ const Loader = () => {
             <img src="../image/loading img.gif" alt="" />
             </Spinner>
         </div>
+        
     );
 };
 
@@ -17,13 +18,14 @@ const loaderStyle = {
     alignItems: 'center',
     height: '100vh',
     backgroundColor: '#f3f3f3',
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  zIndex: 9999,
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 9999,
 };
 
 export default Loader;
+
 
