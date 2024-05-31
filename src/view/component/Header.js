@@ -17,7 +17,7 @@ export default function Header() {
     
       <Navbar className="Navbar" bg="dark" variant="dark" expand="lg">
         <Navbar.Brand className="brand" href="/">
-          CloTheS
+        ℂ𝕝𝕠𝕋𝕙𝕖𝕤
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
