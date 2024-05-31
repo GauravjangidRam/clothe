@@ -76,7 +76,7 @@ export default function Women() {
         <Row>
             <Image src={require('../image/Home-page-img/Women/Women Card/D-1.0-WHP-060424-SPONSORBRANDTILES-header.jpg')} />
             {womencards3.map((value, index) => (
-                <Card key={index} style={{width:'26rem',marginLeft:'10px',cursor:"pointer"}} lg={3} onClick={goto}>
+                <Card key={index} style={{width:'22rem',marginLeft:'10px',cursor:"pointer"}} lg={3} onClick={goto}>
                     <Image src={value.img}/>
                 </Card>
             ))}
