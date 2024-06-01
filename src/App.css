@@ -70,7 +70,7 @@
   transition: color 0.3s ease;
   font-weight: 800;
 }
-.cart-icon {
+/* .cart-icon {
   position: relative;
 }
 
@@ -83,7 +83,7 @@
   position: absolute;
   top: -10px;
   right: -10px;
-}
+} */
 
 .nav-style,
 .logout-style,
@@ -140,7 +140,7 @@
 
   .Navbar {
     padding: 0.2rem;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .nav-style,
@@ -171,8 +171,8 @@
   }
 
   .logStatus *:not(span) {
-    padding: 0.02rem;
-    border: 2px solid gray;
+    /* padding: 0.02rem;
+    border: 2px solid gray; */
     border-radius: 10px;
     margin: 0.4rem;
   }
@@ -184,4 +184,20 @@
     align-self: center;
   }
 
+}
+
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
 }

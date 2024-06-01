@@ -74,11 +74,11 @@ function Home() {
         <Image src={require('../image/Home-page-img/Summer Specials_D.jpg')} fluid />
       </Row>
 
-      <Row className="mb-3">
-        <Carousel responsive={responsive}>
+      <Row className="HomePage-card-section">
+        <Carousel className='Home-Page-card' responsive={responsive}>
           {everyone.map((d, index) => (
-            <Card key={index} style={{ width: '18rem', marginLeft: 20, border: 'none' }} onClick={()=>nav("/Product")}>
-              <Card.Img variant="top" src={d.img} />
+            <Card className='Home-page-image' key={index} style={{ width: '18rem', marginLeft: 20, border: 'none' }} onClick={()=>nav("/Product")}>
+              <Card.Img variant="top" src={d.img} className='Home-Page-Main-Image'/>
             </Card>
           ))}
         </Carousel>
