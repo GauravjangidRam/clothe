@@ -1,10 +1,12 @@
+
+
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../style/Payment.css';
 
 const Payment = () => {
   const location = useLocation();
-  const { productDetails, quantity, totalPrice } = location.state;
+  const { cartItems, totalPrice } = location.state;
   const [showPaymentOptions, setShowPaymentOptions] = useState(false);
   const [selectedPaymentOption, setSelectedPaymentOption] = useState('');
   const [address, setAddress] = useState('');
@@ -34,9 +36,17 @@ const Payment = () => {
   return (
     <div className="payment-container">
       <h1 className="payment-title">Payment Page</h1>
-      <p className="payment-details">Product: {productDetails.name1}</p>
-      <p className="payment-details">Quantity: {quantity}</p>
-      <p className="payment-details">Total Price: &#8377;{totalPrice}</p>
+      <div className="payment-details">
+        {cartItems.map((item, index) => (
+          <div key={index}>
+            <p>Product: {item.name}</p>
+            <p>Size: {item.selectedSize}</p>
+            <p>Color: {item.selectedColor}</p>
+            <p>Price: ₹{item.newPrice}</p>
+          </div>
+        ))}
+      </div>
+      <p className="payment-total-price">Total Price: ₹{totalPrice}</p>
 
       {!showPaymentOptions && (
         <button className="payment-button" onClick={handlePaymentClick}>

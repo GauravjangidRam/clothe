@@ -1,5 +1,4 @@
-
-   /* AddTo.css */
+/* AddTo.css */
 
 .AddTo-Heading {
   text-align: center;
@@ -14,12 +13,14 @@
 
 .AddTo-card {
   margin: 10px;
-  padding: 10px;
+  padding: 0; /* Remove padding */
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove box shadow */
 }
 
 .AddTo-main-image {
- width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
 }
 

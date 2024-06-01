@@ -1,5 +1,4 @@
 
-
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Card, Button, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
@@ -56,7 +55,7 @@ const AddTo = () => {
   };
 
   const handleBuyNow = () => {
-    navigate('/payment', { state: { totalPrice, cartItems } });
+    navigate('/payment', { state: { cartItems, totalPrice } });
   };
 
   return (
@@ -84,6 +83,6 @@ const AddTo = () => {
       </div>
     </>
   );
-}
+};
 
 export default AddTo;
