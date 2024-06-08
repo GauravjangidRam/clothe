@@ -1,14 +1,20 @@
+
 import React from 'react';
-import { Spinner } from 'react-bootstrap';
+import { useEffect, useState } from 'react'; 
+import { spiral } from 'ldrs';
+spiral.register(); 
 
 const Loader = () => {
+    const [isLoading, setIsLoading] = useState(true); 
+
+    useEffect(() => {
+       
+    }, []);
+
     return (
         <div style={loaderStyle}>
-            <Spinner animation="border" role="status">
-            <img src="../image/loading img.gif" alt="" />
-            </Spinner>
+            {isLoading && <l-spiral size="40" speed="0.9" color="black"></l-spiral>}
         </div>
-        
     );
 };
 
@@ -19,6 +25,8 @@ const loaderStyle = {
     height: '100vh',
     backgroundColor: '#f3f3f3',
     position: 'fixed',
+
+    
     top: 0,
     left: 0,
     right: 0,
@@ -27,5 +35,3 @@ const loaderStyle = {
 };
 
 export default Loader;
-
-

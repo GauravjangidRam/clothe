@@ -1,5 +1,5 @@
 
-import { Container, Row, Card, Image } from "react-bootstrap";
+import { Row, Card, Image } from "react-bootstrap";
 import { WomenProductPages } from "../data/womenProductdata";
 import '../style/WomenProduct.css';
 import { useEffect, useState } from "react";

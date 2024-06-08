@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react';
-import { Container, Image, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Image, Row, Col, Card} from 'react-bootstrap';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../style/ProductDetailsKids.css';
 

@@ -18,7 +18,9 @@
   flex-wrap: wrap;
   justify-content: center;
   border: none;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin: 5px ;
+  margin-bottom: 2rem;
 }
 
 .Women-multi{

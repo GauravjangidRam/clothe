@@ -14,7 +14,6 @@ import Logout from '../screen/Logout';
 import ProductDetails from '../screen/ProductDetails';
 import AddToCart from '../screen/AddToCart';
 import Kids from '../screen/Kids';
-import WomenDetails from '../screen/WomenDetails';
 import ProductDetailsWomen from '../screen/ProdutDetailsWomen';
 import Payment from '../screen/Payment';
 import { ProductDetailsKids } from '../screen/ProductDetailsKids';
@@ -51,7 +50,6 @@ export default function RouterName(){
             {/* Women Section Location */}
             <Route path='/Women' Component={Women}/>
             <Route path='/WomenProductPage' Component={WomenProduct}/>
-            <Route path='/WomenDetails' Component={WomenDetails}/>
 
 
 
