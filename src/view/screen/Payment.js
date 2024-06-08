@@ -1,12 +1,11 @@
-
-
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import Loader from './Loader'; // Import the Loader component
 import '../style/Payment.css';
 
 const Payment = () => {
   const location = useLocation();
-  const { cartItems, totalPrice } = location.state;
+  const { cartItems = [], totalPrice } = location.state;
   const [showPaymentOptions, setShowPaymentOptions] = useState(false);
   const [selectedPaymentOption, setSelectedPaymentOption] = useState('');
   const [address, setAddress] = useState('');
@@ -15,6 +14,7 @@ const Payment = () => {
   const [emailId, setEmailId] = useState('');
   const [showPaymentButton, setShowPaymentButton] = useState(false);
   const [paymentSuccessful, setPaymentSuccessful] = useState(false);
+  const [paymentProcessing, setPaymentProcessing] = useState(false); // New state for payment processing
 
   const handlePaymentClick = () => {
     setShowPaymentOptions(true);
@@ -27,10 +27,11 @@ const Payment = () => {
 
   const handlePayment = () => {
     // Simulate payment processing
-    alert("Payment in Processing");
+    setPaymentProcessing(true); // Show loader
     setTimeout(() => {
       setPaymentSuccessful(true);
-    }, 1000);
+      setPaymentProcessing(false); // Hide loader
+    }, 3000);
   };
 
   return (
@@ -118,14 +119,16 @@ const Payment = () => {
         </div>
       )}
 
+      {paymentProcessing && <Loader />} {/* Render loader when payment is processing */}
+
       {paymentSuccessful && (
         <div className="payment-successful">
           <h3>Payment Successful</h3>
           <p>Your payment is done. Thank you for your purchase!</p>
         </div>
-      )}
-    </div>
+      )
+      }
+      </div>
   );
-};
-
+}
 export default Payment;

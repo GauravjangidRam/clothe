@@ -7,9 +7,13 @@ import { useState } from "react";
 function Login() {
   const nav = useNavigate();
 
-  function clearform() {
-    document.getElementById("loginForm").reset();
-    clearLocalStorage(); // Call the function to clear localStorage
+  function clearform(event) {
+    // document.getElementById("loginForm").reset();
+    // clearLocalStorage(); // Call the function to clear localStorage
+
+    event.preventDefault(); // Prevent the default form submission behavior
+    document.getElementById("loginForm").reset(); // Reset the form
+    clearLocalStorage();
   }
 
   function clearLocalStorage() {
@@ -113,10 +117,8 @@ function Login() {
                 Login
               </button>
               <div className="a-style">
-                <a href="#" onClick={clearform}>
-                  {" "}
-                  Forgot Password ?{" "}
-                </a>
+              <a href="#" onClick={clearform}>Forgot Password?</a>
+
                 <a href="" onClick={register} type="button ">
                   {" "}
                   Register{" "}
