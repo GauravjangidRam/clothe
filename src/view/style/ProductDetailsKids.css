@@ -31,7 +31,7 @@
 /* Image style */
 .Kids-img-style {
   width: 55%;
-  height: 400px;
+  height: auto;
 position: relative;
 left: 4rem;
 border-radius: 20px;
@@ -132,6 +132,7 @@ border-radius: 20px;
 /* Add to cart and Buy now buttons */
 .Kids-buy-add {
   margin-top: 20px;
+  text-align: center;
 }
 .Kids-Pr{
   text-align: center;

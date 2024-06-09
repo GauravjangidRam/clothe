@@ -67,11 +67,11 @@ export const ProductDetailsKids = () => {
             </p>
             <p className='Kids-Pr'>Price inclusive of all taxes</p>
             <div className="Kids-buy-add">
+            <button type="button" className="Kids-Buy-btn" onClick={handleBuyNow}>
+                Buy Now
+              </button>
               <button type="button" className="Kids-Add-btn" onClick={handleAddToCart}>
                 Add to Cart
-              </button>
-              <button type="button" className="Kids-Buy-btn" onClick={handleBuyNow}>
-                Buy Now
               </button>
             </div>
           </div>
