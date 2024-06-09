@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Card, Button, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
@@ -39,7 +38,7 @@ const AddTo = () => {
   }, [cartItems]);
 
   const calculateTotalPrice = () => {
-    const total = cartItems.reduce((acc, item) => acc + item.newPrice, 0);
+    const total = cartItems.reduce((acc, item) => acc + parseInt(item.newPrice), 0);
     setTotalPrice(total);
   };
 
@@ -74,9 +73,9 @@ const AddTo = () => {
         )}
         {showTotal && (
           <>
-            <p className="AddTo-Total-Price">Total Price: ₹{totalPrice}</p>
+            <p className="AddTo-Total-Price">Total Price: ₹{totalPrice.toFixed(2)}</p>
             <Button variant="success" onClick={handleBuyNow}>
-              Buy Now - ₹{totalPrice}
+              Buy Now - ₹{totalPrice.toFixed(2)}
             </Button>
           </>
         )}
